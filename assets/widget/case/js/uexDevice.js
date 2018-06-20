@@ -152,7 +152,22 @@ if (UNIT_TEST) {
             uexDevice.stopNetStatusListener();
             UNIT_TEST.log("已停止网络状态监听");
             UNIT_TEST.assert(true);
-        }
+        },
+        "hideStatusBar":function(){
+            uexDevice.hideStatusBar();
+            UNIT_TEST.log("隐藏状态栏");
+             UNIT_TEST.assert(true);
+        },
+        "showStatusBar":function(){
+                    uexDevice.showStatusBar();
+                    UNIT_TEST.log("显示状态栏");
+                     UNIT_TEST.assert(true);
+                },
+         "setStatusBarTransparent":function(){
+                             uexDevice.setStatusBarTransparent();
+                             UNIT_TEST.log("设置状态栏");
+                              UNIT_TEST.assert(true);
+                         }
     };
 
     UNIT_TEST.addCase("device", uexDeviceCase);
